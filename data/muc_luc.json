@@ -1,0 +1,173 @@
+{
+ "so_cau": 10,
+ "nhom": [
+  {
+   "id": "n1",
+   "ten": "Gan – mật – tụy",
+   "mo_ta": "Vàng da, dấu Murphy, Charcot, Courvoisier, sao mạch, Cullen, Grey Turner",
+   "tep": "data/n1.enc.json",
+   "de": [
+    {
+     "id": "n1d1",
+     "ten": "Đề 1"
+    },
+    {
+     "id": "n1d2",
+     "ten": "Đề 2"
+    }
+   ]
+  },
+  {
+   "id": "n2",
+   "ten": "Bụng ngoại khoa cấp",
+   "mo_ta": "Viêm ruột thừa, viêm phúc mạc, thủng tạng rỗng, tắc ruột, thăm trực tràng",
+   "tep": "data/n2.enc.json",
+   "de": [
+    {
+     "id": "n2d1",
+     "ten": "Đề 1"
+    },
+    {
+     "id": "n2d2",
+     "ten": "Đề 2"
+    }
+   ]
+  },
+  {
+   "id": "n3",
+   "ten": "Thành bụng – thoát vị – xuất huyết tiêu hóa",
+   "mo_ta": "Thoát vị bẹn, rốn, vết mổ; hậu môn nhân tạo; phân đen, nôn ra máu",
+   "tep": "data/n3.enc.json",
+   "de": [
+    {
+     "id": "n3d1",
+     "ten": "Đề 1"
+    },
+    {
+     "id": "n3d2",
+     "ten": "Đề 2"
+    }
+   ]
+  },
+  {
+   "id": "n4",
+   "ten": "Hậu môn – trực tràng",
+   "mo_ta": "Trĩ, sa trực tràng, nứt, rò và áp xe hậu môn",
+   "tep": "data/n4.enc.json",
+   "de": [
+    {
+     "id": "n4d1",
+     "ten": "Đề 1"
+    },
+    {
+     "id": "n4d2",
+     "ten": "Đề 2"
+    }
+   ]
+  },
+  {
+   "id": "n5",
+   "ten": "Mạch máu ngoại biên",
+   "mo_ta": "Giãn tĩnh mạch, các loại loét, hoại tử, huyết khối, thiếu máu chi",
+   "tep": "data/n5.enc.json",
+   "de": [
+    {
+     "id": "n5d1",
+     "ten": "Đề 1"
+    },
+    {
+     "id": "n5d2",
+     "ten": "Đề 2"
+    }
+   ]
+  },
+  {
+   "id": "n6",
+   "ten": "Da – mô mềm – nhiễm trùng",
+   "mo_ta": "Áp xe, viêm mô tế bào, nang, u mỡ, loét tì đè, sẹo lồi, viêm cân mạc hoại tử",
+   "tep": "data/n6.enc.json",
+   "de": [
+    {
+     "id": "n6d1",
+     "ten": "Đề 1"
+    },
+    {
+     "id": "n6d2",
+     "ten": "Đề 2"
+    }
+   ]
+  },
+  {
+   "id": "n7",
+   "ten": "Vú – tuyến giáp – vùng cổ",
+   "mo_ta": "Da cam, tụt núm vú, Paget; bướu giáp, lồi mắt, nang vùng cổ",
+   "tep": "data/n7.enc.json",
+   "de": [
+    {
+     "id": "n7d1",
+     "ten": "Đề 1"
+    },
+    {
+     "id": "n7d2",
+     "ten": "Đề 2"
+    }
+   ]
+  },
+  {
+   "id": "n8",
+   "ten": "Tiết niệu – sinh dục",
+   "mo_ta": "Tiểu máu, bí tiểu, xoắn tinh hoàn, khối bìu, tinh hoàn ẩn, bao quy đầu",
+   "tep": "data/n8.enc.json",
+   "de": [
+    {
+     "id": "n8d1",
+     "ten": "Đề 1"
+    },
+    {
+     "id": "n8d2",
+     "ten": "Đề 2"
+    }
+   ]
+  },
+  {
+   "id": "n9",
+   "ten": "Chấn thương – bỏng – toàn thân",
+   "mo_ta": "Vỡ sàn sọ, biến dạng chi, chấn thương ngực, độ bỏng, chèn ép khoang",
+   "tep": "data/n9.enc.json",
+   "de": [
+    {
+     "id": "n9d1",
+     "ten": "Đề 1"
+    },
+    {
+     "id": "n9d2",
+     "ten": "Đề 2"
+    }
+   ]
+  },
+  {
+   "id": "n10",
+   "ten": "Tổng hợp xáo trộn",
+   "mo_ta": "Câu hỏi trộn từ cả 9 nhóm, dùng để tự kiểm tra cuối đợt",
+   "tep": "data/n10.enc.json",
+   "de": [
+    {
+     "id": "n10d1",
+     "ten": "Đề 1"
+    },
+    {
+     "id": "n10d2",
+     "ten": "Đề 2"
+    },
+    {
+     "id": "n10d3",
+     "ten": "Đề 3"
+    },
+    {
+     "id": "n10d4",
+     "ten": "Đề 4"
+    }
+   ]
+  }
+ ]
+}

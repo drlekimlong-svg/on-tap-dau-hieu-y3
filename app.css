@@ -1,0 +1,92 @@
+:root{
+  --nen:#f4f6f6; --the:#ffffff; --chu:#17282b; --mo:#566a6e; --vien:#d7dfe0;
+  --chinh:#0f5c63; --chinh-chu:#ffffff; --chinh-nhat:#e2f0f0;
+  --dung:#14713d; --dung-nen:#e3f4ea; --sai:#b3261e; --sai-nen:#fbe9e7; --vang:#8a5a00; --vang-nen:#fdf3dc;
+  --bong:0 1px 2px rgba(20,40,45,.08);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --nen:#10181a; --the:#1a2527; --chu:#e6eeee; --mo:#9db0b3; --vien:#31423f;
+    --chinh:#5cc2c9; --chinh-chu:#08282b; --chinh-nhat:#1c3538;
+    --dung:#6fd49a; --dung-nen:#17352a; --sai:#ff9c92; --sai-nen:#3d2020; --vang:#f0c56b; --vang-nen:#3a2f16;
+    --bong:none; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --nen:#10181a; --the:#1a2527; --chu:#e6eeee; --mo:#9db0b3; --vien:#31423f;
+  --chinh:#5cc2c9; --chinh-chu:#08282b; --chinh-nhat:#1c3538;
+  --dung:#6fd49a; --dung-nen:#17352a; --sai:#ff9c92; --sai-nen:#3d2020; --vang:#f0c56b; --vang-nen:#3a2f16;
+  --bong:none; color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--nen);color:var(--chu);font:16px/1.5 "Segoe UI",system-ui,-apple-system,Roboto,"Helvetica Neue",Arial,sans-serif;min-height:100vh;display:flex;flex-direction:column}
+button,input{font:inherit;color:inherit}
+a{color:var(--chinh)}
+main{flex:1;width:100%;max-width:720px;margin:0 auto;padding:16px;outline:none}
+.dau{position:sticky;top:0;z-index:5;display:flex;align-items:center;gap:8px;background:var(--the);border-bottom:1px solid var(--vien);padding:10px 16px;min-height:60px}
+.dau-chu{min-width:0}
+.dau-ten{font-weight:700;line-height:1.25}
+.dau-phu{font-size:13px;color:var(--mo)}
+.nut-ve{border:0;background:none;font-size:22px;width:40px;height:40px;border-radius:8px;cursor:pointer;flex:none;margin-left:-8px}
+.nut-ve:hover{background:var(--chinh-nhat)}
+.chan{max-width:720px;margin:0 auto;padding:16px;font-size:12.5px;color:var(--mo);text-align:center}
+.gioi-thieu{margin:0 0 16px;color:var(--mo)}
+h2{font-size:15px;margin:20px 0 8px;color:var(--mo);font-weight:600}
+.ds{display:grid;gap:10px;grid-template-columns:1fr}
+@media (min-width:600px){.ds.hai-cot{grid-template-columns:1fr 1fr}}
+.the{display:block;width:100%;text-align:left;background:var(--the);border:1px solid var(--vien);border-radius:12px;padding:14px;box-shadow:var(--bong)}
+button.the{cursor:pointer}
+button.the:hover{border-color:var(--chinh)}
+.the-ten{font-weight:600;line-height:1.3;display:flex;gap:8px;align-items:flex-start;justify-content:space-between}
+.the-phu{font-size:13.5px;color:var(--mo);margin-top:4px}
+.khoa{flex:none;font-size:15px;line-height:1.3}
+.diem-cao{font-size:13px;color:var(--dung);margin-top:4px;font-weight:600}
+form.mat-khau{background:var(--the);border:1px solid var(--vien);border-radius:12px;padding:16px}
+label{display:block;font-weight:600;margin-bottom:6px}
+input[type=password],input[type=text]{width:100%;padding:12px;border:1px solid var(--vien);border-radius:8px;background:var(--nen)}
+input:focus-visible,button:focus-visible{outline:2px solid var(--chinh);outline-offset:2px}
+.nut{display:inline-block;background:var(--chinh);color:var(--chinh-chu);border:0;border-radius:8px;padding:11px 18px;font-weight:600;cursor:pointer;min-height:44px}
+.nut[disabled]{opacity:.6;cursor:progress}
+.nut.phu{background:var(--the);color:var(--chu);border:1px solid var(--vien)}
+.hang-nut{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.loi{color:var(--sai);margin:10px 0 0;font-size:14.5px}
+.tien{height:6px;background:var(--vien);border-radius:3px;overflow:hidden;margin:0 0 6px}
+.tien>i{display:block;height:100%;background:var(--chinh);transition:width .2s}
+.tien-chu{display:flex;justify-content:space-between;font-size:13.5px;color:var(--mo);margin-bottom:12px}
+.cau{font-size:17px;font-weight:600;line-height:1.4;margin:0 0 12px}
+.dang-cau{display:inline-block;font-size:12px;font-weight:600;color:var(--chinh);background:var(--chinh-nhat);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+figure{margin:0 0 12px;background:var(--the);border:1px solid var(--vien);border-radius:12px;overflow:hidden}
+.khung-anh{position:relative;background:#000;display:flex;justify-content:center}
+figure img{display:block;max-width:100%;max-height:46vh;width:auto;height:auto;transition:filter .15s}
+figure.che img{filter:blur(28px) brightness(.7)}
+.mo-anh{position:absolute;inset:0;display:none;align-items:center;justify-content:center;border:0;background:transparent;color:#fff;font-weight:600;padding:16px;cursor:pointer;text-shadow:0 1px 3px #000}
+figure.che .mo-anh{display:flex}
+figcaption{font-size:12.5px;color:var(--mo);padding:8px 12px}
+.lua-chon{display:grid;gap:8px}
+.lc{display:flex;gap:10px;align-items:flex-start;width:100%;text-align:left;background:var(--the);border:1.5px solid var(--vien);border-radius:10px;padding:12px;cursor:pointer;min-height:48px}
+.lc:hover:not([disabled]){border-color:var(--chinh)}
+.lc[disabled]{cursor:default}
+.lc b{flex:none;width:24px;height:24px;border-radius:50%;background:var(--chinh-nhat);color:var(--chinh);display:flex;align-items:center;justify-content:center;font-size:13.5px}
+.lc.dung{border-color:var(--dung);background:var(--dung-nen)}
+.lc.dung b{background:var(--dung);color:var(--the)}
+.lc.sai{border-color:var(--sai);background:var(--sai-nen)}
+.lc.sai b{background:var(--sai);color:var(--the)}
+.giai{margin-top:12px;border-radius:10px;padding:12px;border:1px solid var(--vien);background:var(--the)}
+.giai-dau{font-weight:700;margin-bottom:4px}
+.giai-dau.dung{color:var(--dung)}
+.giai-dau.sai{color:var(--sai)}
+.nguon{font-size:13px;color:var(--mo);margin-top:8px;overflow-wrap:anywhere}
+.ket-qua{background:var(--the);border:1px solid var(--vien);border-radius:12px;padding:20px;text-align:center}
+.ket-so{font-size:44px;font-weight:700;line-height:1.1;color:var(--chinh)}
+.ket-chu{color:var(--mo);margin-top:4px}
+.on-lai{margin-top:16px}
+.on-lai article{background:var(--the);border:1px solid var(--vien);border-radius:12px;padding:12px;margin-bottom:10px}
+.on-lai .q{font-weight:600}
+.on-lai .a{font-size:14.5px;margin-top:6px}
+.on-lai .a.sai{color:var(--sai)}
+.on-lai .a.dung{color:var(--dung)}
+.on-lai .e{font-size:14.5px;margin-top:6px;color:var(--mo)}
+.on-lai img{display:block;max-width:100%;max-height:220px;border-radius:8px;margin:8px 0}
+.dang-tai{color:var(--mo);padding:24px 0;text-align:center}
